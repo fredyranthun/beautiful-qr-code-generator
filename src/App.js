@@ -14,6 +14,7 @@ import {BsDownload} from 'react-icons/bs';
 import {CompactPicker} from 'react-color';
 import MyDisclosure from './components/Disclosure';
 import FormArea from './components/FormArea';
+// dor downloading:
 import {saveSvgAsPng} from 'save-svg-as-png';
 
 const imageOptions = {
