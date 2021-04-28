@@ -14,7 +14,7 @@ import {BsDownload} from 'react-icons/bs';
 import {CompactPicker} from 'react-color';
 import MyDisclosure from './components/Disclosure';
 import FormArea from './components/FormArea';
-// dor downloading:
+// for downloading:
 import {saveSvgAsPng} from 'save-svg-as-png';
 
 const imageOptions = {
@@ -50,22 +50,22 @@ function App() {
 
   // Color state and border option for QR code.
   const [qrColor, setQrColor] = useState('#000');
-  const [border, setBorder] = useState(false);
+  const border = false;
 
   // Personalization options
   const options = ['Colors'];
-  // Border selector;
-  const borderConfig = (
-    <div>
-      <input
-        type="checkbox"
-        id="border"
-        className="rounded text-pink-500 m-2"
-        checked={border}
-        onChange={() => setBorder(!border)} />
-      <label>Border</label>
-    </div>
-  );
+  // Border selector; border Config is not avalable as feature yet.
+  // const borderConfig = (
+  //   <div>
+  //     <input
+  //       type="checkbox"
+  //       id="border"
+  //       className="rounded text-pink-500 m-2"
+  //       checked={border}
+  //       onChange={() => setBorder(!border)} />
+  //     <label>Border</label>
+  //   </div>
+  // );
 
   const colorPicker = (
     <CompactPicker

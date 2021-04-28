@@ -25,6 +25,8 @@ const FormArea = (props) => {
             case 'TWITTER':
                 props.handleSubmit(`https://twitter.com/${formData.get('twitter')}`);
                 break;
+            default:
+                break;
         }
         
     }
